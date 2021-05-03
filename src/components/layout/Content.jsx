@@ -1,10 +1,20 @@
 import "./Content.css";
+import { Switch, Route } from "react-router-dom";
 
 import React from "react";
+import About from "../../views/examples/About";
+import Home from "../../views/examples/Home";
 
 const Content = (props) => (
   <div className="Content">
-    <h1>Componente Content</h1>
+    <Switch>
+      <Route path="/about">
+        <About />
+      </Route>
+      <Route path="/">
+        <Home />
+      </Route>
+    </Switch>
   </div>
 );
 
