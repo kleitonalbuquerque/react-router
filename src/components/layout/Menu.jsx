@@ -20,7 +20,7 @@ const Menu = (props) => (
           <Link to="/param/legal">Param #02</Link>
         </li>
         <li>
-          <Link to="/param/naoExiste">Não Existe</Link>
+          <Link to="/naoExiste">Não Existe</Link>
         </li>
       </ul>
     </nav>

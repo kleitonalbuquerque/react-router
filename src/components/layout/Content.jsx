@@ -5,6 +5,7 @@ import React from "react";
 import Home from "../../views/examples/Home";
 import About from "../../views/examples/About";
 import Param from "../../views/examples/Param";
+import NotFound from "../../views/examples/NotFound";
 
 const Content = (props) => (
   <div className="Content">
@@ -17,6 +18,9 @@ const Content = (props) => (
       </Route>
       <Route exact path="/">
         <Home />
+      </Route>
+      <Route path="*">
+        <NotFound />
       </Route>
     </Switch>
   </div>
